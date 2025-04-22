@@ -1,12 +1,58 @@
-# React + Vite
+# ✅ React Checkbox List with "Select All" Feature
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and simple React component that implements a checkbox list with a "Select All" option. Built using React functional components and Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- ✔️ Toggle individual checkboxes
+- 🟩 "Select All" or "Unselect All" with a single checkbox
+- 🔁 Real-time state management using React hooks
+- 🎨 Styled using Tailwind CSS for responsiveness and minimal UI
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Preview
+
+![Checkbox List Preview](link-to-screenshot-if-available.png)
+
+---
+
+##  Getting Started
+
+How It Works
+Uses useState to manage the checkbox list.
+
+every() checks if all checkboxes are selected.
+
+some() checks if at least one is selected.
+
+handleSelectAll() toggles the checked status for all items.
+
+handleCheckboxChange() toggles individual item selection.
+
+## Tech Stack
+React (Functional Components + Hooks)
+
+Tailwind CSS
+
+JavaScript (ES6+)
+
+## Folder Structure
+graphql
+Copy
+Edit
+src/
+│
+├── components/
+│   └── CheckboxList.jsx   # Main logic for checkbox handling
+├── App.jsx                # Renders the CheckboxList component
+└── index.js               # React entry point
+
+## Future Enhancements
+Add "Delete Selected" functionality
+
+Support dynamic item addition
+
+Persist selection using localStorage
